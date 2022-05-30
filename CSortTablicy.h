@@ -2,14 +2,15 @@
 #include <iostream>
 #include <climits>
 #include <random>
-
+#include <vector>
 
 class CSortTablicy {
     public:
 
     int* insertElements(int size);
     int* drawNumbers(int size);
-    void ilustrateMethods();
+    void ilustrateCocktailSort();
+    void ilustrateLomutoSort();
 };
 
 template <typename T>

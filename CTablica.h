@@ -1,12 +1,14 @@
 #pragma once
 #include <iostream>
 #include <climits>
+#include <vector>
+#include <string>
 
 class CTablica {
     public:
     
     void cocktailSort(int tableToSort[], int tableSize, bool ascent=true, bool print=true);
-    void Lomuto(int tableToSort[], int tableSize);
+    std::string Lomuto(int tableToSort[], int low, int high, long long &liczbaPorownan, long long &liczbaPrzestawien);
     void Hoare(int tableToSort[], int tableSize);
     void Heap(int tableToSort[], int tableSize);
 };
@@ -19,3 +21,8 @@ void printTable(T tableToSort[], int tableSize) {
         std::cout << tableToSort[i] << " ";
     }
 }
+
+
+int partition(int arr[], int low, int high);
+
+ 

@@ -72,3 +72,37 @@ void CTablica::cocktailSort(int tableToSort[], int tableSize, bool ascent, bool 
         std::cout << " " << liczba_przestawien << " \n";
     }
 }
+
+int partition(int tableToSort[], int low, int high, long long &liczbaPorownan, long long &liczbaPrzestawien)
+{
+    int pivot = tableToSort[high]; 
+    int i = (low - 1);             
+
+    for (int j = low; j <= high - 1; j++)
+    {
+        liczbaPorownan++;
+        if (tableToSort[j] <= pivot)
+        {
+            i++; 
+            std::swap(tableToSort[i], tableToSort[j]);
+            liczbaPrzestawien++;
+        }
+    }
+    std::swap(tableToSort[i + 1], tableToSort[high]);
+    liczbaPrzestawien++;
+    return (i + 1);
+}
+
+std::string CTablica::Lomuto(int tableToSort[], int low, int high, long long &liczbaPorownan, long long &liczbaPrzestawien)
+{
+
+    if (low < high)
+    {
+        int pi = partition(tableToSort, low, high, liczbaPorownan, liczbaPrzestawien);
+
+        Lomuto(tableToSort, low, pi - 1,liczbaPorownan, liczbaPrzestawien);
+        Lomuto(tableToSort, pi + 1, high, liczbaPorownan, liczbaPrzestawien);
+    }
+
+    return " " + std::to_string(liczbaPorownan) + " " + std::to_string(liczbaPrzestawien) + "\n";
+}
