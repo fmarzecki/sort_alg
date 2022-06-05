@@ -3,6 +3,8 @@
 #include <climits>
 #include <random>
 #include <vector>
+#include "CTablica.h"
+
 
 class CSortTablicy {
     public:
@@ -11,6 +13,8 @@ class CSortTablicy {
     int* drawNumbers(int size);
     void ilustrateCocktailSort();
     void ilustrateLomutoSort();
+	void ilustrateHeapSort();
+	void ilustrateHoareSort();
 };
 
 template <typename T>
