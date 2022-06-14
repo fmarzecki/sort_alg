@@ -1,6 +1,6 @@
 #include "CTablica.h"
 
-void CTablica::cocktailSort(int tableToSort[], int tableSize, bool ascent, bool print)
+std::string CTablica::cocktailSort(int tableToSort[], int tableSize, bool ascent, bool print)
 {
     bool swapped = true;
     int min = 0;
@@ -69,6 +69,10 @@ void CTablica::cocktailSort(int tableToSort[], int tableSize, bool ascent, bool 
         std::cout << " " << liczba_porownan;
         std::cout << " " << liczba_przestawien << " \n";
     }
+    std::string text = " " + std::to_string(liczba_porownan);
+    text += " " + std::to_string(liczba_przestawien) + " \n";
+
+    return text;
 }
 
 int partition(int tableToSort[], int low, int high, unsigned long long int &liczbaPorownan, unsigned long long int &liczbaPrzestawien)
@@ -87,7 +91,7 @@ int partition(int tableToSort[], int low, int high, unsigned long long int &licz
         }
     }
     std::swap(tableToSort[i + 1], tableToSort[high]);
-    liczbaPrzestawien++;
+    // liczbaPrzestawien++;
     return (i + 1);
 }
 
@@ -177,7 +181,7 @@ std::string CTablica::Hoare(int tableToSort[], int low, int high, unsigned long 
     {
         int pi = partitionHoare(tableToSort, low, high, liczbaPorownan, liczbaPrzestawien);
 
-        Hoare(tableToSort, low, pi - 1, liczbaPorownan, liczbaPrzestawien);
+        Hoare(tableToSort, low, pi, liczbaPorownan, liczbaPrzestawien);
         Hoare(tableToSort, pi + 1, high, liczbaPorownan, liczbaPrzestawien);
     }
     return " " + std::to_string(liczbaPorownan) + " " + std::to_string(liczbaPrzestawien) + "\n";

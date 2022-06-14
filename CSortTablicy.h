@@ -4,6 +4,7 @@
 #include <random>
 #include <vector>
 #include "CTablica.h"
+#include <fstream>
 
 
 class CSortTablicy {
@@ -11,10 +12,10 @@ class CSortTablicy {
 
     int* insertElements(int size);
     int* drawNumbers(int size);
-    void ilustrateCocktailSort();
-    void ilustrateLomutoSort();
-	void ilustrateHeapSort();
-	void ilustrateHoareSort();
+    void ilustrateCocktailSort(std::ofstream &file);
+    void ilustrateLomutoSort(std::ofstream &file);
+	void ilustrateHeapSort(std::ofstream &file);
+	void ilustrateHoareSort(std::ofstream &file);
 };
 
 template <typename T>

@@ -7,7 +7,7 @@
 class CTablica {
     public:
     
-    void cocktailSort(int tableToSort[], int tableSize, bool ascent=true, bool print=true);
+    std::string cocktailSort(int tableToSort[], int tableSize, bool ascent=true, bool print=true);
     std::string Lomuto(int tableToSort[], int low, int high, unsigned long long int &liczbaPorownan, unsigned long long int &liczbaPrzestawien);
     std::string Hoare(int tableToSort[], int low, int high, unsigned long long int &liczbaPorownan, unsigned long long int &liczbaPrzestawien);
     std::string Heap(int tableToSort[], int tableSize, unsigned long long int &liczbaPorownan, unsigned long long int &liczbaPrzestawien);
