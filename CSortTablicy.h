@@ -12,6 +12,7 @@ class CSortTablicy {
 
     int* insertElements(int size);
     int* drawNumbers(int size);
+
     void ilustrateCocktailSort(std::ofstream &file);
     void ilustrateLomutoSort(std::ofstream &file);
 	void ilustrateHeapSort(std::ofstream &file);
@@ -38,7 +39,7 @@ T sprawdzLiczbe()
 		{
 			while ((podglad = std::cin.get()) != '\n')  //cin.get() - pobierz znak ze strumienia 
 			{
-				if (podglad != ' ')            // Szukanie zb�dnych danych w strumieniu
+				if (podglad != ' ')            // Szukanie zbednych danych w strumieniu
 				{
 					ok = 0;
 					std::cin.ignore(INT_MAX, '\n'); // czyszczenie strumienia

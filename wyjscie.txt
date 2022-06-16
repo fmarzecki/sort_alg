@@ -1,0 +1,62 @@
+cocktailSort  100     liczby losowe 3774 2454 
+cocktailSort  1000    liczby losowe 379205 252828 
+cocktailSort  1000000 liczby losowe 3750724880 2508824164 
+
+cocktailSort  100     liczby uporzadkowane 99 0 
+cocktailSort  1000    liczby uporzadkowane 999 0 
+cocktailSort  1000000 liczby uporzadkowane 999999 0 
+
+cocktailSort  100     liczby odwrotnie uporzadkowane 4950 4949 
+cocktailSort  1000    liczby odwrotnie uporzadkowane 499500 499457 
+cocktailSort  1000000 liczby odwrotnie uporzadkowane 4999950000 4999450070 
+
+cocktailSort  100     liczby prawie posortowane 945 45 
+cocktailSort  1000    liczby prawie posortowane 94950 4948 
+cocktailSort  1000000 liczby prawie posortowane 99202497 494589 
+
+LomutoSort  100     liczby losowe 703 408
+LomutoSort  1000    liczby losowe 11033 6616
+LomutoSort  1000000 liczby losowe 68824040 60315058
+
+LomutoSort  100     liczby uporzadkowane 4950 4950
+LomutoSort  1000    liczby uporzadkowane 499500 499500
+
+LomutoSort  100     liczby uporzadkowane odwrotnie 4950 2450
+LomutoSort  1000    liczby uporzadkowane odwrotnie 469808 234655
+LomutoSort  1000000 liczby uporzadkowane odwrotnie 13554412 13297869
+
+LomutoSort  100     liczby prawie posortowane 4950 4925
+LomutoSort  1000    liczby prawie posortowane 499072 496834
+
+HoareSort  100     liczby losowe 258 159
+HoareSort  1000    liczby losowe 3380 2381
+HoareSort  1000000 liczby losowe 562716 462817
+
+HoareSort  100     liczby uporzadkowane 100 1
+HoareSort  1000    liczby uporzadkowane 1040 41
+HoareSort  1000000 liczby uporzadkowane 344987 244988
+
+HoareSort  100     liczby uporzadkowane odwrotnie 150 51
+HoareSort  1000    liczby uporzadkowane odwrotnie 1541 542
+HoareSort  1000000 liczby uporzadkowane odwrotnie 30282 20283
+
+HoareSort  100     liczby prawie posortowane 105 6
+HoareSort  1000    liczby prawie posortowane 1089 90
+HoareSort  1000000 liczby prawie posortowane 30282 20283
+
+HeapSort  100     liczby losowe 635 486
+HeapSort  1000    liczby losowe 9567 8070
+HeapSort  1000000 liczby losowe 19547163 18047166
+
+HeapSort  100     liczby uporzadkowane 684 537
+HeapSort  1000    liczby uporzadkowane 10145 8648
+HeapSort  1000000 liczby uporzadkowane 18309867 16809870
+
+HeapSort  100     liczby uporzadkowane odwrotnie 548 401
+HeapSort  1000    liczby uporzadkowane odwrotnie 8818 7321
+HeapSort  1000000 liczby uporzadkowane odwrotnie 18313515 16813518
+
+HeapSort  100     liczby prawie posortowane 679 532
+HeapSort  1000    liczby prawie posortowane 10154 8657
+HeapSort  1000000 liczby prawie posortowane 18310039 16810042
+
